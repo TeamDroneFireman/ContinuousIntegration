@@ -10,11 +10,7 @@ docker build -t <nom_de_l_image> /lien/vers/le/repertoire/.
 
 ## Jenkins
 
-[![Jenkins on Quay](https://quay.io/repository/teamdronefireman/jenkins/status "Docker Repository on Quay")](https://quay.io/repository/teamdronefireman/jenkins)
-
-[![Data Volume on Quay](https://quay.io/repository/teamdronefireman/jenkins-volume/status "Docker Repository on Quay")](https://quay.io/repository/teamdronefireman/jenkins-volume)
-
-### Persistence des données
+### Persistence des données [![Data Volume on Quay](https://quay.io/repository/teamdronefireman/jenkins-volume/status "Docker Repository on Quay")](https://quay.io/repository/teamdronefireman/jenkins-volume)
 Afin de conserver les données, on va utiliser un *data-volume container* pour y écrire les données du jenkins, ce volume sera conservé entre deux démarrage du  conteneur de jenkins.
 
 ##### Lancer le conteneur
@@ -36,7 +32,7 @@ docker run --rm --volumes-from=jenkins-data -v $(pwd):/backup busybox \ tar xvf 
 ```
 
 
-### Serveur
+### Serveur [![Jenkins on Quay](https://quay.io/repository/teamdronefireman/jenkins/status "Docker Repository on Quay")](https://quay.io/repository/teamdronefireman/jenkins)
 
 
 Pour lancer le serveur:
