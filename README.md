@@ -10,6 +10,10 @@ docker build -t <nom_de_l_image> /lien/vers/le/repertoire/.
 
 ## Jenkins
 
+[![Jenkins on Quay](https://quay.io/repository/teamdronefireman/jenkins/status "Docker Repository on Quay")](https://quay.io/repository/teamdronefireman/jenkins)
+
+[![Data Volume on Quay](https://quay.io/repository/teamdronefireman/jenkins-volume/status "Docker Repository on Quay")](https://quay.io/repository/teamdronefireman/jenkins-volume)
+
 ### Persistence des données
 Afin de conserver les données, on va utiliser un *data-volume container* pour y écrire les données du jenkins, ce volume sera conservé entre deux démarrage du  conteneur de jenkins.
 
